@@ -117,7 +117,7 @@ public class CreditTest {
         var cardInfo = DataHelper.getMonth00();
         var creditPage = startPage.CreditTour();
         creditPage.allFieldsFilled(cardInfo);
-        creditPage.invalidFormat();
+        creditPage.InvalidExpirationCard();
     }
 
     @Test

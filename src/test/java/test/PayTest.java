@@ -8,7 +8,6 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import page.CreditPage;
 import page.PaymentPage;
 import page.StartPage;
 
@@ -118,7 +117,7 @@ public class PayTest {
         var cardInfo = DataHelper.getMonth00();
         var paymentPage = startPage.PayTour();
         paymentPage.allFieldsFilled(cardInfo);
-        paymentPage.invalidFormat();
+        paymentPage.InvalidExpirationCard();
     }
 
     @Test

@@ -43,12 +43,12 @@ public class PaymentPage {
 
     public void successfulPayment() {
 
-        successMessage.shouldBe(Condition.visible, Duration.ofSeconds(15));
+        successMessage.shouldBe(Condition.visible, Duration.ofSeconds(20));
     }
 
     public void refusedTransaction() {
 
-        errorMessage.shouldBe(Condition.visible, Duration.ofSeconds(15));
+        errorMessage.shouldBe(Condition.visible, Duration.ofSeconds(20));
     }
 
     public void invalidFormat() {

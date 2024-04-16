@@ -24,8 +24,7 @@ public class SqlHelper {
         Thread.sleep(10000);
         var codeSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
         var conn = getConnect();
-        var status = run.query(conn, codeSQL, new ScalarHandler<String>());
-        return status;
+        return run.query(conn, codeSQL, new ScalarHandler<String>());
     }
 
     @SneakyThrows
@@ -33,8 +32,7 @@ public class SqlHelper {
         Thread.sleep(10000);
         var codeSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1";
         var conn = getConnect();
-        var status = run.query(conn, codeSQL, new ScalarHandler<String>());
-        return status;
+        return run.query(conn, codeSQL, new ScalarHandler<String>());
     }
 
     @SneakyThrows
